@@ -13,11 +13,15 @@
 
     <h2>タイトル表示</h2>
     <ul>
-    {% for title in my_dict.test_titles %}
-        {% if title == 'title2'%}
-            <li>{{ title }}</li>
-        {% endif %}
-    {% endfor %}
-    </ul>    
+        {% for title in my_dict.test_titles %}
+            {% if title == 'title2' %}
+                <li>{{ title }}</li>
+            {% elif title == 'title3' %}
+                <li>見せられないよ</li>
+            {% else %}
+                <li>xxxx</li>
+            {% endif %}
+        {% endfor %}
+    </ul> 
 </body>
 </html>
